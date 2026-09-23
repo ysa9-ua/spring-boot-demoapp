@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1 th:text="${esPalindroma} ? 'La palabra ' + ${palabra} + ' SÍ es palíndroma' : 'La palabra ' + ${palabra} + ' NO es palíndroma'"></h1>
+<p><a th:href="@{/palindroma}">Comprobar otra palabra</a></p>
+</body>
+</html>
