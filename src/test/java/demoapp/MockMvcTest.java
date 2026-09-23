@@ -25,7 +25,8 @@ public class MockMvcTest {
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello World")));
+                .andExpect(content().string(containsString("Youssef")))
+                .andExpect(content().string(containsString("palíndroma")));
     }
 
     // Podemos hacer también una petición POST y pasar los datos
